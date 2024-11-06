@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's and Women's Clothing - VIP Online Shopping Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #ff6600;
+            margin-top: 30px;
+        }
+
+        .clothing-section {
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .clothing-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .clothing-item {
+            flex: 1 1 calc(33.333% - 20px);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+            transition: transform 0.2s;
+        }
+
+        .clothing-item:hover {
+            transform: scale(1.02);
+        }
+
+        .clothing-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Men's and Women's Clothing</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="clothing-section">
+            <h2>Men's Clothing</h2>
+            <div class="clothing-grid">
+                <div class="clothing-item">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2024/4/412687635/UE/UV/BY/27118592/mens-casual-shirts-500x500.jpeg" alt="Men's Shirt">
+                    <h3>Men's Casual Shirt</h3>
+                    <p>Price: <strong>$39.99</strong></p>
+                </div>
+                <div class="clothing-item">
+                    <img src="https://m.media-amazon.com/images/I/51bCOvP0H3L._AC_UY1000_.jpg" alt="Men's Pants">
+                    <h3>Men's Chinos</h3>
+                    <p>Price: <strong>$49.99</strong></p>
+                </div>
+                <div class="clothing-item">
+                    <img src="https://media.licdn.com/dms/image/D4D12AQG1vjrANyjUbA/article-cover_image-shrink_720_1280/0/1709069666600?e=2147483647&v=beta&t=VRjLH2FuKIU9jyF78QqIGQ7fMPadGnCNnQpTiqv57WE" alt="Men's Jacket">
+                    <h3>Men's Leather Jacket</h3>
+                    <p>Price: <strong>$99.99</strong></p>
+                </div>
+                <!-- Add more men's clothing items as needed -->
+            </div>
+        </section>
+
+        <section class="clothing-section">
+            <h2>Women's Clothing</h2>
+            <div class="clothing-grid">
+                <div class="clothing-item">
+                    <img src="https://s.alicdn.com/@sc04/kf/H9bb1ee51dd424e5e88deed179be1845eK.jpg" alt="Women's Dress">
+                    <h3>Women's Summer Dress</h3>
+                    <p>Price: <strong>$59.99</strong></p>
+                </div>
+                <div class="clothing-item">
+                    <img src="https://c8.alamy.com/comp/KJRJEM/womens-clothing-on-the-hanger-in-the-store-KJRJEM.jpg" alt="Women's Top">
+                    <h3>Women's Blouse</h3>
+                    <p>Price: <strong>$29.99</strong></p>
+                </div>
+                <div class="clothing-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF5_4cO82lq-ZcojYLU2nO4ycLwBKzGBLoug&s" alt="Women's Jacket">
+                    <h3>Women's Denim Jacket</h3>
+                    <p>Price: <strong>$49.99</strong></p>
+                </div>
+                <!-- Add more women's clothing items as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VIP Online Shopping Store. All rights reserved.</p>
+        <p>Follow us on <a href="#">Social Media</a></p>
+    </footer>
+</body>
+</html>

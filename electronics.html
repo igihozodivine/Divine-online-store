@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <style>
+        /* Reset default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body, header, and container styling */
+        body {
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 1em;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Main content styling */
+        .main-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            flex-grow: 1; /* Pushes footer to bottom when content is less */
+        }
+
+        .section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .dropdown {
+                position: static;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>VIP ELECRONICS STORE</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+        <div class="section" id="electronics">
+            <h2>Office Devices</h2>
+            <p>Discover our latest range of electronics, from smartphones to laptops and accessories.</p>
+            <img src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg" height="200px" width="200px">
+            <img src="https://www.ubuy.rw/productimg/?image=aHR0cHM6Ly9pNS53YWxtYXJ0aW1hZ2VzLmNvbS9zZW8vVklaSU8tMjQtQ2xhc3MtRC1TZXJpZXMtRkhELUxFRC1TbWFydC1UVi1EMjRmLUowOV8wMGZjNzJkNC1hZGI3LTRhYjktYWU4NS0wMWUwZjM0MDM0ZDAuYmUyOGQzYTQ5ZjMzNTdmMTU2Y2ZiZDYxODdkMzQ2M2QuanBlZw.jpg" height="200px" width="200px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu6xS4vfnpwqQ4xhnqKltzNWSVy9yp0jHGzg&s" height="200px" width="200px">
+            <img src="https://www.zdnet.com/a/img/resize/0c79b6447c3fc1c47e5ce21ffb67c4080f94d946/2024/02/07/8968b01d-8b50-4f03-9961-92ea3f64be86/edbott-desktop-laptop.jpg?auto=webp&width=1280" height="200px" width="200px"><img src="https://www.shutterstock.com/image-illustration/computer-devices-mobile-phone-laptop-260nw-217080976.jpg" height="200px" width="200px">
+            <img src="https://i.pinimg.com/736x/21/29/7e/21297e126cce64c029c33b1b88bfa1b8.jpg" height="200px" width="200px">
+            <img src="https://www.sandhyputramakmur.com/assets/img/services/Office_Gadgets_Technology.jpg" height="200px" width="200px">
+            <img src="https://i.pinimg.com/736x/be/b7/a6/beb7a642b449e741d2f535710bc72d55.jpg" height="200px" width="200px">
+        </div>
+
+        <div class="section" id="clothes">
+            <h2>Smartphones</h2>
+            <p>Explore digitalized Smartphones of new generation. Find your next favorite Smartphones.</p>
+            <img src="https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/6/e/8/6e8f3c01ad_86838_smartphone-def.jpg" height="200px" width="200px">
+            <img src="https://cdn2.hubspot.net/hubfs/3362136/5%20Office%20Electronics%20You%20Can%20Recycle..png" height="200px" width="200px">
+            <img src="https://lumolog.com/wp-content/uploads/2024/04/Budget-Friendly-Smartphones-1024x683.jpg" height="200px" width="200px">
+            <img src="https://cdn.britannica.com/09/241709-050-149181B1/apple-iphone-11-2019.jpg" height="200px" width="200px"><img src="https://akcdn.detik.net.id/visual/2024/09/10/teknologi-1_169.png?w=400&q=90" height="200px" width="200px">
+            <img src="https://biztekmantra.com/wp-content/uploads/2021/09/Android-vs-iPhone.jpg" height="200px" width="200px">
+            <img src="https://www.shutterstock.com/image-photo/new-jersey-usa-september-21st-260nw-2204645591.jpg" height="200px" width="200px">
+            <img src="https://www.shutterstock.com/image-photo/on-september-22-2023-apple-260nw-2365382609.jpg" height="200px" width="200px">
+            
+        </div>
+
+        <div class="section" id="shoes">
+            <h2>Accessories</h2>
+            <p>Browse our accessories collection, perfect for every season and occasion.</p>
+            <img src="https://i.pinimg.com/736x/65/52/36/655236ad6260e060ba16bc976ba51800.jpg" height="200px" width="200px">
+            <img src="https://freerangestock.com/sample/128542/fashion-accessories-store.jpg" height="200px" width="200px">
+            <img src="https://www.themds.com/files/parfois/parfois-italy-store-728.jpg" height="200px" width="200px">
+            <img src="https://centralmarket.com.my/wp-content/uploads/2023/09/Apparel-and-Accessories.jpg" height="200px" width="200px"><img src="https://akcdn.detik.net.id/visual/2024/09/10/teknologi-1_169.png?w=400&q=90" height="200px" width="200px">
+            <img src="https://c8.alamy.com/comp/D48HHE/a-young-woman-in-a-shop-of-decoration-and-fashion-accessories-france-D48HHE.jpg" height="200px" width="200px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8WeLGze0WD5X0Oc_dgV4EuObgdNs6ohOT6A&s" height="200px" width="200px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLaR-xAQWgOjdcxpAtWSSW3dvVl163wAaCQA&s" height="200px" width="200px">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 VIP Online Shopping Store. All rights reserved.</p>
+        <p>Contact us: info@divineshop.com | Phone: +250799456785</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Online Shopping Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: grey;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        footer {
+            background-color: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VIP Online Shopping Store</h1>
+        <nav>
+            <ul>
+    
+                <li><a href="#products">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Store!</h2>
+            <p>Explore our exclusive range of home utensils designed for your convenience and elegance.</p>
+        </section>
+
+        <section id="products">
+            <h2>Featured Products</h2>
+            <div class="product">
+                <h3>Stainless Steel Cookware Set</h3>
+                <p>Durable and stylish cookware set for all your cooking needs.</p>
+                <img src="https://cdn.prod.website-files.com/610b00497717ea7f4466e936/634691057b8ee478f3297389_d219f66e-33af-4f63-9b27-b773edd86325.jpeg" width="500px" height="400px">
+                <p>Price: <strong>$99.99</strong></p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Non-Stick Frying Pan</h3>
+                <p>Perfect for healthy cooking without sticking.</p>
+                <img src="https://learn.surlatable.com/wp-content/uploads/2023/07/Cookware-Materials.jpg"  width="500px" height="400px">
+                <p>Price: <strong>$29.99</strong></p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Elegant Dinnerware Set</h3>
+                <p>Beautifully designed dinnerware to impress your guests.</p>
+                <img src="https://m.media-amazon.com/images/I/71AFug7GolL.jpg"  width="500px" height="400px">
+                <p>Price: <strong>$79.99</strong></p>
+                <button>Add to Cart</button>
+            </div>
+            <div style="width: 50px;">
+                <button   onclick="calculate()">Calculate Total payment</button>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out!</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VIP Online Shopping Store. All rights reserved.</p>
+        <p>Follow us on <a href="#">Social Media</a></p>
+    </footer>
+</body>
+</html>
