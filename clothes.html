@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,6 +23,7 @@
         nav ul {
             list-style-type: none;
             padding: 0;
+
         }
 
         nav ul li {
@@ -102,6 +103,44 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .nav {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            background-color: green;
+            padding: 30px;
+            position:fixed;
+            z-index: 1000;
+            width: 100%;
+            top: 0;
+            
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        
+        }
+
+        /* Dropdown styling */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            list-style: none;
+            padding: 0.5em;
+            border-radius: 0.5em;
+        }
+
+        .nav li {
+            position: relative;
+        }
+
+        .nav li:hover .dropdown {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -114,7 +153,16 @@
             </ul>
         </nav>
     </header>
-
+    <nav>
+        <ul class="nav">
+            <li><a href="file:///C:/Users/delta%20computer/OneDrive/Desktop/Divine/home.html">Home</a></li>
+            <li><a href="file:///C:/Users/delta%20computer/OneDrive/Desktop/Divine/electronics.html">Electronics</a></li>
+            <li><a href="file:///C:/Users/delta%20computer/OneDrive/Desktop/Divine/clothes.html">Clothes</a></li>
+            <li><a href="file:///C:/Users/delta%20computer/OneDrive/Desktop/Divine/shoes.html">Shoes</a></li>
+            <li><a href="file:///C:/Users/delta%20computer/OneDrive/Desktop/Divine/utensils.html">Utensils</a></li>
+            <li><a href="file:///C:/Users/delta%20computer/OneDrive/Desktop/Divine/Contactus.html">About Us</a></li>
+        </ul>
+    </nav>
     <main>
         <section class="clothing-section">
             <h2>Men's Clothing</h2>
